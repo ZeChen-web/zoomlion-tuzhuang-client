@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D206F0F-7482-45C4-A722-BD69470AD808}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RS.Model</RootNamespace>
+    <AssemblyName>RS.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\徐工转台主体柔性焊接线数据采集20211231\EqmDataColRevolving\RS.RealTimeDBO\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JsonMaterialInfo.cs" />
+    <Compile Include="JsonSwingArm.cs" />
+    <Compile Include="JsonSwingArmInfo.cs" />
+    <Compile Include="MBDDepartmentInfo.cs" />
+    <Compile Include="MBDWorkInStruction.cs" />
+    <Compile Include="MBFException.cs" />
+    <Compile Include="MBMBOMDetailInfo.cs" />
+    <Compile Include="MBMBOMInfo.cs" />
+    <Compile Include="MCacheOut.cs" />
+    <Compile Include="MESAlreadyWorkMessage.cs" />
+    <Compile Include="MESWorkSignal.cs" />
+    <Compile Include="MHandMoveMaterial.cs" />
+    <Compile Include="MHTClientFaultLogInfo.cs" />
+    <Compile Include="MMaterialAllInfo.cs" />
+    <Compile Include="MMaterialCodeInfo.cs" />
+    <Compile Include="MMaterialInfo.cs" />
+    <Compile Include="MPMOperatorInfo.cs" />
+    <Compile Include="MPMPeopleInfo.cs" />
+    <Compile Include="MRFDevStopOrReady.cs" />
+    <Compile Include="MRTOperatorLoginInfo.cs" />
+    <Compile Include="MRTPRODLOGINFO.cs" />
+    <Compile Include="MSpecifyToStore.cs" />
+    <Compile Include="MSTClientInfo.cs" />
+    <Compile Include="MSTStationInfo.cs" />
+    <Compile Include="MWOJobOrderInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

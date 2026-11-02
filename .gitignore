@@ -1,0 +1,28 @@
+# .NET build output and restored packages
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+TestResults/
+*.dll
+*.exe
+*.exe.config
+*.pdb
+*.msi
+*.nupkg
+*.snupkg
+*.cache
+
+# Local IDE files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Runtime logs and generated archives
+*.log
+*.zip
+*.rar
+*.7z
